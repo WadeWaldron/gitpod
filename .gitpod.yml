@@ -1,0 +1,4 @@
+image: gitpod/workspace-dotnet
+tasks:
+  - init: npm install
+    command: echo 'start script'
