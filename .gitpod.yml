@@ -1,6 +1,8 @@
-image: confluentinc/cp-kafka
+image: gitpod/workspace-full
 
 tasks:
+
+  - before: docker compose up
  
   - name: Producer
   - name: Consumer
