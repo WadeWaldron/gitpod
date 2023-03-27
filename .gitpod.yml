@@ -6,6 +6,7 @@ tasks:
       tar -xzf kafka.tgz
       rm kafka.tgz
       gp sync-done kafka
+      exit
   - name: Zookeeper
     command: |
       gp sync-await kafka
