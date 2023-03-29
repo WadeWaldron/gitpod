@@ -6,10 +6,12 @@ github:
     branches: true
 
 tasks:
-  - init: |
+  - name: Init
+    init: |
       curl https://dlcdn.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz -o kafka.tgz
       tar -xzf kafka.tgz
       rm kafka.tgz
+    command: |
       gp sync-done kafka
       exit
   - name: Zookeeper
